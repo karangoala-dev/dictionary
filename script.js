@@ -1,10 +1,11 @@
+const dotenv = require('dotenv');
 
 const dictionary = (word)=>{
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '85f6485b91msh42ae3709d9767d8p10a4adjsn9d110a3a0df4',
-            'X-RapidAPI-Host': 'dictionary-by-api-ninjas.p.rapidapi.com'
+            'X-RapidAPI-Key': process.env.API_KEY,
+            'X-RapidAPI-Host': process.env.API_HOST
         }
     };
     
